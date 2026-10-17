@@ -1,25 +1,43 @@
+# Flasks & inCombat: Waystones Compat
 
-Installation information
-=======
+A compatibility mod for Minecraft 1.21.1 that connects
+Waystones, Elden Flasks and In Combat.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+## Features
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+- Prevents Waystones teleportation while the player is in combat.
+- Recharges Elden Flasks after a successful Waystones teleport.
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+## Requirements
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+- Minecraft Java Edition 1.21.1
+- NeoForge 21.1.262
+- Waystones 21.1.46 for NeoForge
+- Balm 21.0.66 for NeoForge
+- Elden Flasks 2.0.0+1.21.1
+- In Combat 2.0.0+1.21.1
+- Sinytra Connector and Forgified Fabric API, required to run the
+  Fabric-based Elden Flasks and In Combat mods on NeoForge.
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+The versions above describe the tested configuration. Other versions
+may work, but are not guaranteed to be compatible.
+
+## Installation
+
+1. Install Minecraft 1.21.1 with NeoForge 21.1.262.
+2. Install Waystones and its dependency, Balm.
+3. Install Sinytra Connector and Forgified Fabric API.
+4. Install compatible versions of Elden Flasks and In Combat.
+5. Place the Flasks & inCombat: Waystones Compat JAR in your `mods`
+   directory.
+
+## License
+
+This project is licensed under the GNU General Public License v3.0
+only. See [LICENSE](LICENSE).
+
+## Compatibility notes
+
+This is an independent compatibility add-on. Elden Flasks and
+In Combat are separate projects; consult their respective project pages
+for their source code, licenses and updates.

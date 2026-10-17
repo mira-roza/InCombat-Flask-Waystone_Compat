@@ -24,7 +24,7 @@ import java.util.List;
 @Mod(FlasksWaystonesCompat.MODID)
 public class FlasksWaystonesCompat {
     public static final Logger LOGGER = LogUtils.getLogger();
-    
+
     public static final String MODID = "eldenflaskscompat";
 
     private static final ResourceLocation COMBAT_EFFECT =
@@ -64,7 +64,7 @@ public class FlasksWaystonesCompat {
         if (player.hasEffect(combatEffect)) {
             event.setCanceled(true);
         }
-    }   
+    }
 
     /**
      * Recharge les fioles uniquement après une téléportation réussie.
